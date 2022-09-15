@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    float x, y, z;
+    double x, y, z;
     cin >> x >> y >> z;
 
     if (x+y > z && x+z > y && y+z > x) {

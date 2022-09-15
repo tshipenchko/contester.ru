@@ -2,7 +2,8 @@
 using namespace std;
 
 int main() {
-    float x, y, z;
+    double x, y, z;
+    cin >> x >> y >> z;
 
     if (x <= y && y <= z) {
         cout << x;
