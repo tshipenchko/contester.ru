@@ -2,9 +2,13 @@
 using namespace std;
 
 double calculate(double a, double n) {
-    double result = 1;
-    for (int i = 1; i <= n; ++i) {
-        result *= (a + i - 1);
+    double result = 0;
+    for (int i = 0; i <= n; ++i) {
+        double divider = a;
+        for (int j = 0; j < i; ++j) {
+            divider *= (a + j + 1);
+        }
+        result += 1/divider;
     }
 
     return result;
