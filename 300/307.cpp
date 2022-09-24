@@ -20,7 +20,7 @@ int getDays(int m, int y) {
 
 int main() {
     int d, m, y;
-    std::cin >> d >> m >> y;
+    cin >> d >> m >> y;
 
     if (y < 0 || m < 0 || d < 0 || m > 12 || d > getDays(m, y)) {
         cout << "no";
