@@ -3,11 +3,10 @@ using namespace std;
 
 double calculate(double a, double n) {
     double result = 0;
+    double divider = 1;
+
     for (int i = 0; i <= n; ++i) {
-        double divider = a;
-        for (int j = 0; j < i; ++j) {
-            divider *= (a + j + 1);
-        }
+        divider *= (a + i);
         result += 1/divider;
     }
 
