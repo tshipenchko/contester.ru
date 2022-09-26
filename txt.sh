@@ -11,7 +11,7 @@ generate_dir() {
 generate() {
   echo "cmake_minimum_required(VERSION 3.22)"
   echo "project(cpp)"
-  echo "set(CMAKE_CXX_STANDARD 14)"
+  echo "set(CMAKE_CXX_STANDARD 98)"
   echo "add_executable(main.cpp main.cpp)"
   echo
   generate_dir other
