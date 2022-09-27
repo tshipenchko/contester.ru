@@ -23,4 +23,5 @@ generate() {
 }
 
 # run in background
+generate > CMakeLists.txt
 ( inotifywait -e create,delete --quiet ./*00 --monitor | (while read -r; do generate > CMakeLists.txt; done) &)
