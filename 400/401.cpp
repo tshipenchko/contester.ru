@@ -5,7 +5,7 @@ int main() {
     int i, x;
     int array[100];
 
-    for (i = 0; i < 100; ++i) { // NOLINT(modernize-loop-convert)
+    for (i = 0; i < 100; ++i) {
         cin >> x;
         if (x == -1) {
             break;

@@ -8,7 +8,7 @@ int main() {
 
     cin >> n;
     cin >> min;
-    for (int i = 1; i <n; ++i) {
+    for (int i = 1; i < n; ++i) {
         cin >> cur;
         if (cur < min) {
             min = cur;
