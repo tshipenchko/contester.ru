@@ -1,14 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
 project(cpp)
 set(CMAKE_CXX_STANDARD 98)
-add_executable(main.cpp main.cpp)
 
-add_executable(divide.cpp other/divide.cpp)
-add_executable(echo_args.cpp other/echo_args.cpp)
-add_executable(echo_num.cpp other/echo_num.cpp)
-add_executable(product.cpp other/product.cpp)
-add_executable(sum.cpp other/sum.cpp)
-
+add_executable(main.cpp ./000/main.cpp)
 add_executable(201.cpp ./200/201.cpp)
 add_executable(202.cpp ./200/202.cpp)
 add_executable(203.cpp ./200/203.cpp)
