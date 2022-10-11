@@ -14,18 +14,15 @@ int main() {
 
     for (int i = 0; i < m; ++i) {
         s = 0;
-        cout << "c: ";
         for (int j = 0; j < n; ++j) {
-            cout << arr[j][i];
             s += arr[j][i];
-        } cout << endl;
-        cout << "s: " << s << endl;
-        if (s > c) {
+        }
+        if (s >= c) {
             c = s;
             ci = i;
         }
     }
-    cout << ci + 1; // FIXME
+    cout << ci + 1;
 
     return 0;
 }
