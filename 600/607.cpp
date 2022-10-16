@@ -1,46 +1,43 @@
 #include <iostream>
 using namespace std;
 
-int getPositivesCount(const int arr[], int n);
+int getMaximum(const int arr[], int n);
 
 
 int main() {
-    int n, m;
+    int n, m, c;
     cin >> n >> m;
-    int arr[n][m];
+    int arr[n];
+
     for (int i = 0; i < n; ++i) {
+        arr[i] = 0;
         for (int j = 0; j < m; ++j) {
-            cin >> arr[i][j];
+            cin >> c;
+            if (c > 0) ++arr[i];
         }
     }
 
-    bool allEquals = true;
-    int current;
-    int maxCount = getPositivesCount(arr[0], m);
-    int index = 0;
-    for (int i = 1; i < n; ++i) {
-        current = getPositivesCount(arr[i], m);
-        if (current > maxCount) {
-            maxCount = current;
-            index = i;
-            allEquals = false;
-        }
-    }
+    int result = getMaximum(arr, n);
+    if (result == -1) cout << "Numbers are equal";
+    else cout << ++result;
 
-    if (allEquals) {
-        cout << "Numbers are equal";
-    } else {
-        cout << index + 1;
-    }
-
-    return 0;  // FIXME
+    return 0;
 }
 
-int getPositivesCount(const int arr[], int n) {
-    int count = 0;
+int getMaximum(const int arr[], int n) {
+    bool allEquals = true;
+    int sample = arr[0];
+    int max = arr[0];
+    int maxIndex = 0;
+
     for (int i = 0; i < n; ++i) {
-        if (arr[i] > 0) ++count;
+        allEquals = allEquals && sample == arr[i];
+        if (arr[i] > max) {
+            max = arr[i];
+            maxIndex = i;
+        }
     }
 
-    return count;
+    if (allEquals) return -1;
+    return maxIndex;
 }
