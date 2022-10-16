@@ -1,5 +1,6 @@
 ### Own
 cmake-build-debug/
+CMakeLists.txt
 .idea/
 
 ### C++ template
