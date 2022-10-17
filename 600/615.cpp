@@ -1,7 +1,5 @@
 #include <iostream>
 #include <iomanip>
-
-#define MAX_L 100
 using namespace std;
 
 
