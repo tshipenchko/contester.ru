@@ -3,6 +3,7 @@ using namespace std;
 
 void swap2(unsigned int*, unsigned int*);
 
+
 int main() {
     unsigned int x, y;
     cin >> x >> y;
