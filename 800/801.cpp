@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-void swap2(int*, int*);
+void swap2(unsigned int*, unsigned int*);
 
 int main() {
-    int x, y;
+    unsigned int x, y;
     cin >> x >> y;
 
     swap2(&x, &y);
@@ -12,8 +12,8 @@ int main() {
     cout << x << ' ' << y;
 }
 
-void swap2(int* a, int* b) {
-    int temp = *b;
+void swap2(unsigned int* a, unsigned int* b) {
+    unsigned int temp = *b;
     *b = *a;
     *a = temp;
 }
