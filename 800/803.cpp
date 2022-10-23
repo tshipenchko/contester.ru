@@ -4,6 +4,7 @@ using namespace std;
 
 int countFrequency(char* s, char c);
 
+
 int main() {
     int n;
     cin >> n;
