@@ -5,6 +5,7 @@ using namespace std;
 
 void replace(char*, char*);
 
+
 int main() {
     char *source = new char[N];
     char *dest = new char[N];
