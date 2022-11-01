@@ -11,8 +11,6 @@ int main() {
     char text[N];
     cin.getline(text, N);
 
-    int l = (int)strlen(text);
-
     char out[N];
     deleteRepeats(out, text);
     cout << out;
