@@ -13,7 +13,7 @@ int main() {
     return 0;
 }
 
-int solve(const char *arr) {
+int solve(const char *arr) {  // FIXME
     int len = (int)strlen(arr);
     int count = 0;
 
