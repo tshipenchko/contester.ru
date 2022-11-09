@@ -39,7 +39,7 @@ int main() {
         }
     }
 
-    if (index == -1) {
+    if (index == -1) {  // FIXME ?
         cout << "Impossible";
     } else {
         cout << trains[index].id << '_' << trains[index].location << '_' << trains[index].time;
